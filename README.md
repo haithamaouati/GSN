@@ -1,0 +1,2 @@
+# GSN
+Generate Short Name
