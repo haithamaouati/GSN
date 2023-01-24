@@ -32,13 +32,11 @@ Version: **1.0**
 
 ```mermaid
 flowchart TD;
-A[الهأ]-->|Reverse|B[أهلا];
-A<-->|Vice Versa|B;
-B-->|Reverse|A;
+A[Keywords]-->|Shorting|B[Short name];
 ```
 
 >**Note**:
-> When entering the reversed Arabic text, it will be reversed and vice versa.
+> Generate the short name by taking the first 3 letters of each keyword and concatenating them together.
 
 ## Author
 Made with :heart: by **Haitham Aouati**
