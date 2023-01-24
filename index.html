@@ -26,6 +26,13 @@
   </head>
   <body>
     <div class="container">
+     <pre>
+       ____ ____  _   _ 
+      / ___/ ___|| \ | |
+     | |  _\___ \|  \| |
+     | |_| |___) | |\  |
+      \____|____/|_| \_|
+      </pre>
       <p><b>GSN</b> — Generate Short Name</p>
       <hr style="width:70%">
       <label for="keywords">Enter keywords:</label>
@@ -38,8 +45,8 @@
   <p><b>Flowchart</b> —  How it works?</p>
   <div class="mermaid">
   graph TD;
-      K[Keywords]-->N[Short name];
-      K-->|Generate the short name by taking the first 3 letters of each keyword and concatenating them together|N;
+    A[Keywords] -->|First 3 letters|B[Short name];
+    A -->|First 3 letters| B;
   </div>
   <hr>
   <p><small>Version: <b>1.0</b></small></p>
