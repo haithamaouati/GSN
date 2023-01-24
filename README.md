@@ -14,7 +14,7 @@ ___
 # GSN
 Generate Short Name
 
-[GSN](https://haithamaouati.github.io/GSN) is a free **Converter** arabic text to a format compatible with designing software.
+[GSN](https://haithamaouati.github.io/GSN) generate a short, brandable business name using keywords.
 
 ## Table of Contents
 - [Demo](#demo)
