@@ -13,8 +13,8 @@
       text-align: center;
     }
     textarea {
-      width: 80%;
-      height: 40px;
+      width: 100%;
+      height: 20px;
       margin: 10px 0;
     }
       .container {
@@ -38,9 +38,8 @@
   <p><b>Flowchart</b> —  How it works?</p>
   <div class="mermaid">
   graph TD;
-      ا-->a;
-      ب-->b;
-      ت-->t;
+      K[Keywords]-->N[Short name];
+      K-->|Generate the short name by taking the first 3 letters of each keyword and concatenating them together|N;
   </div>
   <hr>
   <p><small>Version: <b>1.0</b></small></p>
