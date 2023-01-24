@@ -31,8 +31,9 @@ Version: **1.0**
 **Flowchart**
 
 ```mermaid
-flowchart TD;
-A[Keywords]-->|Shorting|B[Short name];
+graph TD
+A[Keywords] -->|First 3 letters|B[Short name];
+    A -->|First 3 letters| B;
 ```
 
 >**Note**:
