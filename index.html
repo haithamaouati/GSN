@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GSN</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+      /* CSS styles for page layout */
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p><b>GSN</b> — Generate Short Name</p>
+      <label for="keywords">Enter keywords:</label>
+      <textarea id="keywords" oninput="generateName()"></textarea>
+      <br>
+      <label for="shortname">Short name:</label>
+      <textarea id="shortname" readonly></textarea>
+    </div>
+    <script>
+      function generateName() {
+        // Get the keywords entered by the user
+        var keywords = document.getElementById("keywords").value;
+        // Split the keywords into an array
+        var keywordArray = keywords.split(" ");
+        // Shorten the keywords to create a brandable name
+        var shortName = "";
+        for (var i = 0; i < keywordArray.length; i++) {
+          shortName += keywordArray[i].substring(0, 3);
+        }
+        // Update the short name field
+        document.getElementById("shortname").value = shortName;
+      }
+    </script>
+  </body>
+</html>
